@@ -35,10 +35,9 @@
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  
 
 
-* The trainnning and calibration tests were done using te help of the Rover_Project_Test_Notebook_CEMT notebooks"
-* In the tests the array of threshed limits were sintonized
-* Once the best chooices were maden, complete  perception_step was not that chalengying. The main change was to filter the pixels with
-* the best accuracy. ( the ones closers to the rover )
+* The trainnning and calibration tests were done using te help of the Rover_Project_Test_Notebook_CEMT notebooks
+* In this tests the array of threshed limits were sintonized, first with de data provided, then using data from "../cemt_output"
+* Once the best chooices were maden, complete  perception_step was not that chalengying. The main change was to filter the pixels with the best accuracy. ( the ones closers to the rover )
 * In the decision step was incremented the option to go in the direction of a rock. So the future idea, would be to try to get them all. 
 
 ### Notebook Analysis
