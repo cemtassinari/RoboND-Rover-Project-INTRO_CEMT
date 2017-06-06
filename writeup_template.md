@@ -22,9 +22,9 @@
 
 [//]: # (Image References)
 
-[image1]: ./cemt_output/threshed_grid.jpg
-[image2]: ./calibration_images/example_grid1.jpg
-[image3]: ./calibration_images/example_rock1.jpg 
+[image1]: ./cemt_data_test/IMG/robocam_2017_06_05_00_54_22_838.jpg
+[image2]: ./cemt_output/threshed_grid.jpg
+[image3]: ./cemt_output/threshed_rock.jpg
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/916/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -41,13 +41,11 @@
 * In the decision step was incremented the option to go in the direction of a rock. So the future idea, would be to try to get them all. 
 
 ### Notebook Analysis
-#### 1. Run the functions provided in the notebook on test images (first with the test data provided, next on data you have recorded). Add/modify functions to allow for color selection of obstacles and rock samples.
-Here is an example of how to include an image in your writeup.
+#### 1. With the simular and data taken, it was possible to record data in the trainnning mode. Here is ana example of the data recorded:
 
 ![alt text][image1]
 
-#### 1. Populate the `process_image()` function with the appropriate analysis steps to map pixels identifying navigable terrain, obstacles and rock samples into a worldmap.  Run `process_image()` on your test data using the `moviepy` functions provided to create video output of your result. 
-And another! 
+#### 1. Once it was able to work with my own data, I start to fulfill the functions with the best thresh limits. I used 
 
 ![alt text][image2]
 ### Autonomous Navigation and Mapping
