@@ -6,16 +6,20 @@
 
 **The goals / steps of this project are the following:**  
 
-**Training / Calibration**  
+**Autonomous Navigation / Mapping**
 
-* The trainnning and calibration tests were done using te help of the Rover_Project_Test_Notebook_CEMT notebooks"
-* In the tests the array of threshed limits were sintonized
+* Download the simulator and take data in "Training Mode" - Checked
+* Test out the functions in the Jupyter Notebook provided - Checked 
+* Add functions to detect obstacles and samples of interest (golden rocks) - Checked
+* Fill in the `process_image()` function with the appropriate image processing steps (perspective transform, color threshold etc.) to get from raw images to a map.  The `output_image` you create in this step should demonstrate that your mapping pipeline works. - Checked
+* Use `moviepy` to process the images in your saved dataset with the `process_image()` function.  Include the video you produce as part of your submission. - Checked
 
 **Autonomous Navigation / Mapping**
 
-* Once the best chooices were maden, complete  perception_step was not that chalengying. The main change was to filter the pixels with
-* the best accuracy. ( the ones closers to the rover )
-* In the decision step was incremented the option to go in the direction of a rock. So the future idea, would be to try to get them all. 
+* Fill in the `perception_step()` function within the `perception.py` script with the appropriate image processing functions to create a map and update `Rover()` data (similar to what you did with `process_image()` in the notebook).  - Checked
+* Fill in the `decision_step()` function within the `decision.py` script with conditional statements that take into consideration the outputs of the `perception_step()` in deciding how to issue throttle, brake and steering commands.  - Checked
+* Iterate on your perception and decision function until your rover does a reasonable (need to define metric) job of navigating and mapping.  - Checked
+
 
 [//]: # (Image References)
 
@@ -31,7 +35,12 @@
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  
 
-You're reading it!
+
+* The trainnning and calibration tests were done using te help of the Rover_Project_Test_Notebook_CEMT notebooks"
+* In the tests the array of threshed limits were sintonized
+* Once the best chooices were maden, complete  perception_step was not that chalengying. The main change was to filter the pixels with
+* the best accuracy. ( the ones closers to the rover )
+* In the decision step was incremented the option to go in the direction of a rock. So the future idea, would be to try to get them all. 
 
 ### Notebook Analysis
 #### 1. Run the functions provided in the notebook on test images (first with the test data provided, next on data you have recorded). Add/modify functions to allow for color selection of obstacles and rock samples.
