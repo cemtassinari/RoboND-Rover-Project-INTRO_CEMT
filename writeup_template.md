@@ -51,13 +51,15 @@
 
 ### Autonomous Navigation and Mapping
 
-#### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
+#### 3. Getting better results and running `perception_step()` and `decision_step()` and `drive_rover.py`) functions in the autonomous mapping.
 
 ###### I could achieve the goal of the project without changing the functions far beyond of the suggestions made in the notebook.
-###### I added some filter to penalyzed inaccurate pixels. Also, I added one condition to not consider the perception if the calibration is inaccurate, due to pitch movements.
-###### I've made some changes in the decision tree for trying to start to get some rocks. Though, its just a preliminary step. I want to continue to work in the 
+###### In my first attempt, my fidelity was really low, even with my improvements in the notebook. 
+###### So, I looked for different ways of improving the rover. Setting differents conditions. 
+###### But, it have only gotten better, after I added some filter to penalyzed inaccurate pixels. Also, I added one condition to not consider the perception if the calibration is inaccurate, due to pitch movements.
+###### I've made some changes in the decision tree for trying to start to get some rocks. Though, its just a preliminary step. I want to continue to work in that issue
 
-###### 2. Launching in autonomous mode your rover can navigate and map autonomously.
+##### 2. Launching in autonomous mode your rover can navigate and map autonomously.
 ###### Here I show some results of the rover in the autonomous mode:
 #
 #
