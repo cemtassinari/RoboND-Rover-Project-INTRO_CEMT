@@ -41,17 +41,21 @@
 * In the decision step was incremented the option to go in the direction of a rock. So the future idea, would be to try to get them all. 
 
 ### Notebook Analysis
-#### 1. With the simular and data taken, it was possible to record data in the trainnning mode. Here is ana example of the data recorded:
+#### 1. With the simulator setted and functions tested, it was possible to record data in the trainnning mode. Here is an example of some frame of the data recorded:
 
-![alt text][image1]
+![alt text][image1] 
 
-#### 1. Once it was able to work with my own data, I start to fulfill the functions with the best thresh limits I could find.
+#### 2. After I was able to work with my own data, I start to fulfill the functions with the best thresh limits I could find.
 
-![alt text][image2]
+ ![alt text][image2] ![alt text][image3]
+
 ### Autonomous Navigation and Mapping
 
 #### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
 
+# I could achieve the goal of the project without changing the functions far beyond of the suggestions made in the notebook.
+# I added some filter to penalyzed inaccurate pixels. Also, I added one condition to not consider the perception if the calibration is inaccurate, due to pitch movements.
+# I've made some changes in the decision tree for trying to start to get some rocks. Though, its just a preliminary step. I want to continue to work in the 
 
 #### 2. Launching in autonomous mode your rover can navigate and map autonomously.
 # Here I show some results of the rover in the autonomous mode:
@@ -64,6 +68,6 @@
 
 
 
-![alt text][image3]
+
 
 
