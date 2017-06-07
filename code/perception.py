@@ -7,7 +7,7 @@ def color_thresh(img, above_rgb_thresh, below_rgb_thresh):
     # Create an array of zeros same xy size as img, but single channel
     color_select = np.zeros_like(img[:,:,0])
     # Require that each pixel be above all three threshold values in RGB
-    # above_thresh will now contain a boolean array with "True"
+    # above_thresh and below will now contain a boolean array with "True"
     # where threshold was met
     above_thresh = (img[:,:,0] > above_rgb_thresh[0]) \
                 & (img[:,:,1] > above_rgb_thresh[1]) \
@@ -85,7 +85,7 @@ def perspect_transform(img, src, dst):
     return warped
 
 def filtering(xpixels, ypixels):
-    trustable_pixels = np.sqrt(xpixels**2 + ypixels**2) < 50
+    trustable_pixels = np.sqrt(xpixels**2 + ypixels**2) < 49
     xpix_trustable = xpixels[trustable_pixels]
     ypix_trustable = ypixels[trustable_pixels]
     return xpix_trustable, ypix_trustable
@@ -95,8 +95,7 @@ def perception_step(Rover):
     # Perform perception steps to update Rover()
     # TODO:
     
-    #Defining some biased conditions
-    
+    #Defining some biased conditions - Sensors out of calibration
     if Rover.pitch > 1.5:
         return Rover
     
@@ -121,7 +120,7 @@ def perception_step(Rover):
     warped = perspect_transform(Rover.img, source, destination)
     # 3) Apply color threshold to identify navigable terrain/obstacles/rock samples
     terrain_image = color_thresh(warped,above_rgb_thresh=(160, 160, 160),below_rgb_thresh=(256, 256, 256))
-    rock_sample_image = color_thresh(warped,above_rgb_thresh=(80, 80 , 0),below_rgb_thresh=(255, 255, 20))
+    rock_sample_image = color_thresh(warped,above_rgb_thresh=(120, 90 , 0),below_rgb_thresh=(255, 255, 25))
     obstacle_image = color_thresh(warped,above_rgb_thresh=(0, 0, 0),below_rgb_thresh=(100, 100, 100))
     
     # 4) Update Rover.vision_image (this will be displayed on left side of screen)
@@ -138,7 +137,9 @@ def perception_step(Rover):
     obst_xpix, obst_ypix = rover_coords(obstacle_image)
     
     rover_centric_pixel_distances, rover_centric_angles = to_polar_coords(xpix, ypix)
+    rover_centric_pixel_distances_rock, rover_centric_angles_rock = to_polar_coords(rock_xpix, rock_ypix)
     
+    mean_dir_rock = np.mean(rover_centric_angles_rock)
     mean_dir = np.mean(rover_centric_angles)
     
     #5.1) Filtering good Pixels
@@ -162,8 +163,14 @@ def perception_step(Rover):
     
     # 8) Convert rover-centric pixel positions to polar coordinates
     # Update Rover pixel distances and angles
+    if rover_centric_pixel_distances_rock < 15:
+        Rover.nav_angles = rover_centric_angles_rock
+    else:
+        Rover.nav_angles = rover_centric_angles
+        
+    
     Rover.nav_dists = rover_centric_pixel_distances
-    Rover.nav_angles = rover_centric_angles
+   
  
    
     return Rover
