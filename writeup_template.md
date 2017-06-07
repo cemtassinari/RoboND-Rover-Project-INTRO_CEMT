@@ -69,7 +69,8 @@
 ###### Strong inverse correlation between area mapped and time of mapping.
 
 **Note: I recorded 2 runs that are saved in the folders: "../video_auto" and "../autodrive2" . The visual settings are shown below  **
- ![alt text][image3]
+
+ ![alt text][image4]
 
 
 
