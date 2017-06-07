@@ -45,7 +45,7 @@
 
 ![alt text][image1]
 
-#### 1. Once it was able to work with my own data, I start to fulfill the functions with the best thresh limits. I used 
+#### 1. Once it was able to work with my own data, I start to fulfill the functions with the best thresh limits I could find.
 
 ![alt text][image2]
 ### Autonomous Navigation and Mapping
@@ -53,11 +53,14 @@
 #### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
 
 
-#### 2. Launching in autonomous mode your rover can navigate and map autonomously.  Explain your results and how you might improve them in your writeup.  
+#### 2. Launching in autonomous mode your rover can navigate and map autonomously.
+# Here I show some results of the rover in the autonomous mode:
+#
+#
+#
+#
 
-**Note: running the simulator with different choices of resolution and graphics quality may produce different results, particularly on different machines!  Make a note of your simulator settings (resolution and graphics quality set on launch) and frames per second (FPS output to terminal by `drive_rover.py`) in your writeup when you submit the project so your reviewer can reproduce your results.**
-
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+**Note: I recorded one run to show the results I got with my settings. I intend to get better results in the future. **
 
 
 
