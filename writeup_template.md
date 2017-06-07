@@ -51,7 +51,7 @@
 
 ### Autonomous Navigation and Mapping
 
-#### 3. Getting better results and running `perception_step()` and `decision_step()` and `drive_rover.py`) functions in the autonomous mapping.
+#### 3. Getting better results and running `perception_step()` and `decision_step()` and `drive_rover.py()` functions in the autonomous mapping.
 
 ###### I could achieve the goal of the project without changing the functions far beyond of the suggestions made in the notebook.
 ###### In my first attempt, my fidelity was really low, even with my improvements in the notebook. 
@@ -61,10 +61,10 @@
 
 ##### 2. Launching in autonomous mode your rover can navigate and map autonomously.
 ###### Here I show some results of the rover in the autonomous mode:
-#
-#
-#
-#
+# More than 60 % of area mapped within more than 70% of fidelity.
+# Rock Obtained (see../autodrive2) 
+# Moments where the rover get stucked (see../autodrive2) -> An urge of evolving the decision tree
+# Strong inverse correlation between area mapped and time of mapping
 
 **Note: I recorded one run to show the results I got with my settings. I intend to get better results in the future. **
 
