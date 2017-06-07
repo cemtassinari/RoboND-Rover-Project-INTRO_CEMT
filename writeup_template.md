@@ -25,6 +25,8 @@
 [image1]: ./cemt_data_test/IMG/robocam_2017_06_05_00_54_22_838.jpg
 [image2]: ./cemt_output/threshed_grid.jpg
 [image3]: ./cemt_output/threshed_rock.jpg
+[image4]: ./calibration_images/Image_Setting.jpg
+
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/916/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -66,7 +68,8 @@
 ###### Moments where the rover get stucked (see.."/autodrive2") -> Again an urge of evolving the decision tree;
 ###### Strong inverse correlation between area mapped and time of mapping.
 
-**Note: I recorded one run to show the results I got with my settings. I intend to get better results in the future. **
+**Note: I recorded 2 runs that are saved in the folders: "../video_auto" and "../autodrive2" . The visual settings are shown below  **
+ ![alt text][image3]
 
 
 
