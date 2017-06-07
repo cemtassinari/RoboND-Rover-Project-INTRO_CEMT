@@ -53,12 +53,12 @@
 
 #### 1. Fill in the `perception_step()` (at the bottom of the `perception.py` script) and `decision_step()` (in `decision.py`) functions in the autonomous mapping scripts and an explanation is provided in the writeup of how and why these functions were modified as they were.
 
-# I could achieve the goal of the project without changing the functions far beyond of the suggestions made in the notebook.
-# I added some filter to penalyzed inaccurate pixels. Also, I added one condition to not consider the perception if the calibration is inaccurate, due to pitch movements.
-# I've made some changes in the decision tree for trying to start to get some rocks. Though, its just a preliminary step. I want to continue to work in the 
+###### I could achieve the goal of the project without changing the functions far beyond of the suggestions made in the notebook.
+###### I added some filter to penalyzed inaccurate pixels. Also, I added one condition to not consider the perception if the calibration is inaccurate, due to pitch movements.
+###### I've made some changes in the decision tree for trying to start to get some rocks. Though, its just a preliminary step. I want to continue to work in the 
 
-#### 2. Launching in autonomous mode your rover can navigate and map autonomously.
-# Here I show some results of the rover in the autonomous mode:
+###### 2. Launching in autonomous mode your rover can navigate and map autonomously.
+###### Here I show some results of the rover in the autonomous mode:
 #
 #
 #
