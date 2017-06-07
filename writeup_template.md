@@ -61,10 +61,10 @@
 
 ##### 2. Launching in autonomous mode your rover can navigate and map autonomously.
 ###### Here I show some results/analysis of the rover in the autonomous mode:
-####### More than 60 % of area mapped within more than 70% of fidelity. (see"../video_auto") ;
-####### Rock Obtained (see"../autodrive2")  -> But with a very bad aproach -> Tha demonstraded a need of evolving the decision;
-####### Moments where the rover get stucked (see.."/autodrive2") -> Again an urge of evolving the decision tree;
-####### Strong inverse correlation between area mapped and time of mapping.
+###### More than 60 % of area mapped within more than 70% of fidelity. (see"../video_auto") ;
+###### Rock Obtained (see"../autodrive2")  -> But with a very bad aproach -> Tha demonstraded a need of evolving the decision;
+###### Moments where the rover get stucked (see.."/autodrive2") -> Again an urge of evolving the decision tree;
+###### Strong inverse correlation between area mapped and time of mapping.
 
 **Note: I recorded one run to show the results I got with my settings. I intend to get better results in the future. **
 
